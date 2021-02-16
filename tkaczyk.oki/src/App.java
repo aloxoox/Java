@@ -35,21 +35,24 @@ public class App {
     //DXD
 
     System.out.println("Podaj pierwszą liczbę");
-    Int a = scanner.nextInt();
-    System.out.println("Podaj operator:");
-    String plus = scanner.nextLine();
-    System.out.println("Podaj drugą liczbę");      
-    Int b = scanner.nextInt();
-    Int dod = a + b;
-    Int od = a - b;
+    int a = scanner.nextInt();
 
-    if(String.plus == "+")
-    {
-      System.out.println("Wynik to: " +dod+ ".");
+    System.out.println("Podaj operator:");
+    scanner.nextLine(); 
+    String op = scanner.nextLine();
+    System.out.println("Podaj drugą liczbę");      
+    int b = scanner.nextInt();
+
+
+    if(op.equals("+")){
+      System.out.println("Wynik to: " +(a+b)+ ".");
     }
-    else 
+    else if (op.equals("-1"))
     {
-      System.out.println("Wynik to: " +od+ ".");
+      System.out.println("Wynik to: " +(a-b)+ ".");
+    }
+    else {
+      System.out.println("Zły operator!");
     }
 
 
