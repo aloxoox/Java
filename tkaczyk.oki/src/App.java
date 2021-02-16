@@ -47,7 +47,7 @@ public class App {
     if(op.equals("+")){
       System.out.println("Wynik to: " +(a+b)+ ".");
     }
-    else if (op.equals("-1"))
+    else if (op.equals("-"))
     {
       System.out.println("Wynik to: " +(a-b)+ ".");
     }
