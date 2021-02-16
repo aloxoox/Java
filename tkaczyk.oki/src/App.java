@@ -1,5 +1,7 @@
 
 import java.util.Scanner;
+
+import javax.lang.model.util.ElementScanner6;
 public class App {
     public static void main(String[] args) throws Exception {
       Scanner scanner = new Scanner(System.in);
@@ -12,7 +14,7 @@ public class App {
       /* // KALKULATOR DWÓCH LICZB 
       System.out.println("Podaj pierwszą liczbę");
       int a = scanner.nextInt();
-      System.out.println("Podaj drugą licfzbę");      
+      System.out.println("Podaj drugą liczbę");      
       int b = scanner.nextInt();
       System.out.println(a+" + "+b+" = "+(a+b));      
       */
@@ -28,10 +30,30 @@ public class App {
       // */
 
 
-    scanner.close()
+
 
     //DXD
 
-    
+    System.out.println("Podaj pierwszą liczbę");
+    Int a = scanner.nextInt();
+    System.out.println("Podaj operator:");
+    String plus = scanner.nextLine();
+    System.out.println("Podaj drugą liczbę");      
+    Int b = scanner.nextInt();
+    Int dod = a + b;
+    Int od = a - b;
+
+    if(String.plus == "+")
+    {
+      System.out.println("Wynik to: " +dod+ ".");
     }
+    else 
+    {
+      System.out.println("Wynik to: " +od+ ".");
+    }
+
+
+    scanner.close();
+
+}
 }
