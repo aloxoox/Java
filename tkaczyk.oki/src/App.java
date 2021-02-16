@@ -44,16 +44,32 @@ public class App {
     int b = scanner.nextInt();
 
 
-    if(op.equals("+")){
+    switch(op){
+      case "+":
       System.out.println("Wynik to: " +(a+b)+ ".");
-    }
-    else if (op.equals("-"))
-    {
+    break;
+    case "-":
       System.out.println("Wynik to: " +(a-b)+ ".");
+    break;
+    case "*":
+    System.out.println("Wynik to: " +(a*b)+ ".");
+    break;
+    case "/":
+    System.out.println("Wynik to: " +(a/b)+ ".");
+    break;
+    case "%":
+    System.out.println("Wynik to: " +(a%b)+ ".");
+    break;
+    default: 
+    System.out.println("Podano zły operator");
+    break;
     }
-    else {
-      System.out.println("Zły operator!");
-    }
+ 
+
+
+
+
+
 
 
     scanner.close();
