@@ -37,7 +37,7 @@ public class App {
     System.out.println("Podaj pierwszą liczbę");
     int a = scanner.nextInt();
 
-    System.out.println("Podaj operator:");
+    System.out.println("Podaj operator: '+','-'','*','/'','%'");
     scanner.nextLine(); 
     String op = scanner.nextLine();
     System.out.println("Podaj drugą liczbę");      
@@ -47,24 +47,23 @@ public class App {
     switch(op){
       case "+":
       System.out.println("Wynik to: " +(a+b)+ ".");
-    break;
+        break;
     case "-":
       System.out.println("Wynik to: " +(a-b)+ ".");
-    break;
+       break;
     case "*":
     System.out.println("Wynik to: " +(a*b)+ ".");
-    break;
+       break;
     case "/":
     System.out.println("Wynik to: " +(a/b)+ ".");
-    break;
+      break;
     case "%":
     System.out.println("Wynik to: " +(a%b)+ ".");
-    break;
+       break;
     default: 
     System.out.println("Podano zły operator");
-    break;
+       break;
     }
- 
 
 
 
