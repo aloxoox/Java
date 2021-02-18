@@ -34,14 +34,11 @@ public class App {
 /*
     System.out.println("Podaj pierwszą liczbę");        //switch
     int a = scanner.nextInt();
-
     System.out.println("Podaj operator: '+','-'','*','/'','%'");
     scanner.nextLine(); 
     String op = scanner.nextLine();
     System.out.println("Podaj drugą liczbę");      
     int b = scanner.nextInt();
-
-
     switch(op){
       case "+":
       System.out.println("Wynik to: " +(a+b)+ ".");
@@ -77,7 +74,6 @@ public class App {
          {7,8,9},
          {10,11,12},
       }
-
     };
    System.out.println( students[1][1][1]);
     */
@@ -89,26 +85,22 @@ public class App {
    
     /*
     String[] licz = {"zero", "jeden", "dwa","trzy"};
-
     for(String l : licz){
     //   System.out.println("Wykonuje się!");
    //System.out.println(l);//wyrzuca wszystkie elementy tablicy
-
 //deklaracja ze i będzie 0, ma się wykonywać jeżeli jest mniejsza od 4,
    for(int i=-0; i < 4; i++){
       System.out.println(i);
-
    }
    for(int i = 0; i < licz.length; i++){
       //System.out.println(i);
       System.out.println(i+": "+licz[i]);
    }
-
     }*/
 
    
 
-    String[][] dane = {
+    /*String[][] dane = {
       {"Więcej niż jedno zwierzę","stado","klucz","dwa","owca","lama"},
       {"Sporty na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
     };
@@ -133,6 +125,108 @@ public class App {
     }      
 
     System.out.println("Twój wynik to "+wynik);
-    scanner.close();
+
+    */
+
+   
+/*
+    Math.max(5,10); //wieksza liczba 
+    Math.min(5, 10); // mniejsza
+    Math.sqrt(64);
+    Math.abs(-4.7);
+    Math.random();
+    int randomNum = (int) (Math.random()* 101);
+  
+*//*
+    int random = (int)(Math.random() * 11) + 5;
+    System.out.println(random);
+*/
+
+// WHILE
+
+/*
+int nr = 5;
+while(nr < 10){
+  System.out.println("Wykonuje pętle!" +nr+".");
+  nr++;
+}*/
+/*//While Do
+do{
+    System.out.println("Wykonuje pętle:" +nr+".");
+    nr++;
+  }while(nr > 10);
+*/
+
+/*//BREAK
+
+int nr = 0;
+do{ 
+  System.out.println("Wykonuje petle nr: "+nr+".");
+  nr++;
+  if(nr==4){
+    break;    //break służy do kończenia pętli
+  }
+
+}while(nr < 10);
+*/
+
+
+/*//CONTINUE  //wyrzuca interpreter i 
+int nr = 0;
+do{
+  nr++;
+  if(nr==4){
+    continue;
+
+  }
+  System.out.println("Wykonuje petle nr: "+nr+".");
+}
+while(nr < 10);
+int nr = 0;
+
+do{
+  nr++;
+  if(nr % 2 == 0){
+    continue;
+
+  }
+  System.out.println("Wykonuje petle nr: "+nr+".");
+}
+while(nr < 10);
+*/
+
+
+boolean o = false;
+
+int random = (int)(Math.random() * 101);
+
+
+int szansa = 1;
+
+while(szansa <=5)
+{
+  System.out.println("szansa nr: "+szansa);
+  int odp = scanner.nextInt();
+  if(odp < random)
+  {
+    System.out.println("Liszba jest mniejsza");
+  }
+  else if(odp > random)
+  {
+    System.out.println("Liczba jest większa");
+  }
+  else {
+    System.out.println("TAK! To: "+ random+".");
+  }
+
+  szansa++;
+}
+System.out.println("Liczba to:"+random".");
+
+
+
+
+
+    //scanner.close();
   }
 }
