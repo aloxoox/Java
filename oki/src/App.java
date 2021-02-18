@@ -104,14 +104,11 @@ public class App {
       {"Więcej niż jedno zwierzę","stado","klucz","dwa","owca","lama"},
       {"Sporty na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
     };
-
     int wynik = 0;
-
     for(int i = 0; i < dane.length; i++){
       System.out.println(dane[i][0]); 
       String odp = scanner.nextLine(); 
       boolean isAnswerCorrect = false;
-
       for(int it = 1; it < dane[i].length; it++){
         if(dane[i][it].equals(odp)){
           isAnswerCorrect = true;
@@ -123,9 +120,7 @@ public class App {
         System.out.println("X");
       }
     }      
-
     System.out.println("Twój wynik to "+wynik);
-
     */
 
    
@@ -158,7 +153,6 @@ do{
 */
 
 /*//BREAK
-
 int nr = 0;
 do{ 
   System.out.println("Wykonuje petle nr: "+nr+".");
@@ -166,7 +160,6 @@ do{
   if(nr==4){
     break;    //break służy do kończenia pętli
   }
-
 }while(nr < 10);
 */
 
@@ -177,33 +170,29 @@ do{
   nr++;
   if(nr==4){
     continue;
-
   }
   System.out.println("Wykonuje petle nr: "+nr+".");
 }
 while(nr < 10);
 int nr = 0;
-
 do{
   nr++;
   if(nr % 2 == 0){
     continue;
-
   }
   System.out.println("Wykonuje petle nr: "+nr+".");
 }
 while(nr < 10);
 */
 
-
-
+/* //Zgadywanka
 
 int random = (int)(Math.random() * 101);
 
 
 int szansa = 1;
 
-while(szansa <=5)
+while(szansa <=7)
 {
   System.out.println("szansa nr: "+szansa);
   int odp = scanner.nextInt();
@@ -223,7 +212,7 @@ while(szansa <=5)
 }
 System.out.println("Liczba to:"+random+".");
 
-
+*/
 
 
 
