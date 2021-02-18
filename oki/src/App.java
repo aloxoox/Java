@@ -196,7 +196,7 @@ while(nr < 10);
 */
 
 
-boolean o = false;
+
 
 int random = (int)(Math.random() * 101);
 
@@ -209,11 +209,11 @@ while(szansa <=5)
   int odp = scanner.nextInt();
   if(odp < random)
   {
-    System.out.println("Liszba jest mniejsza");
+    System.out.println("Liszba jest większa");
   }
   else if(odp > random)
   {
-    System.out.println("Liczba jest większa");
+    System.out.println("Liczba jest mniejsza");
   }
   else {
     System.out.println("TAK! To: "+ random+".");
@@ -221,7 +221,7 @@ while(szansa <=5)
 
   szansa++;
 }
-System.out.println("Liczba to:"+random".");
+System.out.println("Liczba to:"+random+".");
 
 
 
