@@ -1,4 +1,7 @@
 public class Kurs {
+  public static void main(String[] args) throws Exception {
+    System.out.println("oki");
+  }
     /*import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
