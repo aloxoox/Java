@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -186,12 +186,8 @@ while(nr < 10);
 */
 
 /* //Zgadywanka
-
 int random = (int)(Math.random() * 101);
-
-
 int szansa = 1;
-
 while(szansa <=7)
 {
   System.out.println("szansa nr: "+szansa);
@@ -207,15 +203,36 @@ while(szansa <=7)
   else {
     System.out.println("TAK! To: "+ random+".");
   }
-
   szansa++;
 }
 System.out.println("Liczba to:"+random+".");
-
 */
 
-
-
-    //scanner.close();
+import java.util.Scanner;
+public class App {
+  public static void main(String[] args) throws Exception{
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("OLLLA: ");
+    System.out.println(city(scanner.nextLine()));
+    scanner.close();
+  }
+  static String city( String userWoj ){
+    String[][] arr = {
+      {"Slask","Katowice"},
+      {"Wielkopolska","Poznań"},
+      {"Malopolska","Kraków"},
+      {"Mazowieckie","Warszawa"},
+      {"Lodzkie", "Łódź"}
+    };
+    String output = "Nie znaleźliśmy takiego województwa.";
+    int i = 0;
+    while( i < arr.length ){
+      if(arr[i][0].equals(userWoj)){
+        output = "Stolicą województwa "+arr[i][0]+" jest "+arr[i][1];
+        break;
+      }
+      i++;
+    }
+    return output;
   }
 }
