@@ -19,6 +19,9 @@ public class Frame extends JFrame {
         setVisible(true);
     }
 
+	public Frame(String string) {
+	}
+
     
     
 }
