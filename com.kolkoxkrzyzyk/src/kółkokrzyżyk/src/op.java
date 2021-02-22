@@ -14,6 +14,7 @@ public class op extends Frame implements WindowListener,ActionListener {
                 myWindow.setSize(350,100);
                 myWindow.setVisible(true);
                 myWindow.setLocation(800, 200);
+                myWindow.setBackground(Color.green);
         }
 
         public op(String title) {
