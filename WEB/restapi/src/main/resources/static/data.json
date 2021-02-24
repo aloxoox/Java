@@ -1,0 +1,17 @@
+[ {
+  "id" : 1,
+  "title" : "Pierwszy post",
+  "content" : "To pierwszy post napisany w WebService. Powodzenia w tworzeniu kolejnych!"
+}, {
+  "id" : 2,
+  "title" : "Drugi post",
+  "content" : "Treść"
+}, {
+  "id" : 1,
+  "title" : "eeeee",
+  "content" : "daddf ff "
+}, {
+  "id" : 1,
+  "title" : "efef",
+  "content" : "efgsfgs fger"
+} ]

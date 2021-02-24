@@ -36,7 +36,6 @@ public class Buttons extends JPanel implements ActionListener{
             button[i].setBackground(Color.WHITE);
             System.out.println("WYSZŁO!");
           }
-
           if(source.equals(button[i])){
             button[i].setText(""+symbol);
             button[i].setEnabled(false);
@@ -45,10 +44,7 @@ public class Buttons extends JPanel implements ActionListener{
         checkResult();
     }
     public void checkResult(){
-
         String[] ch = new String[9];
-  
-  
         for(int fi = 0; fi < 3; fi++){
           for(int i = fi*3; i < (fi*3)+3; i++){
             ch[i] = button[i].getText();
@@ -56,12 +52,13 @@ public class Buttons extends JPanel implements ActionListener{
           int i = fi*3;
           System.out.println(i);
           if (ch[i].equals(ch[i+1]) && ch[i].equals(ch[i+2]) && !ch[i].equals("")) {
+            button[i].setEnabled(false);
             button[i].setBackground(Color.GREEN);
             button[i+1].setBackground(Color.GREEN);
             button[i+2].setBackground(Color.GREEN);
+            
           }
         }
-        
         int[] id = new int[9];
         for(int i = 0; i < 9; i++){
             ch[i] = button[i].getText();
@@ -92,10 +89,5 @@ public class Buttons extends JPanel implements ActionListener{
             button[id[4]].setBackground(Color.BLUE);
             button[id[6]].setBackground(Color.BLUE);
         }
-        
-  
-  
-  
       }
-  
   }
